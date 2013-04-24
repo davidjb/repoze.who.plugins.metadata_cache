@@ -5,7 +5,7 @@ import sys
 from setuptools import setup, find_packages
 
 
-version = '0.1'
+version = '0.2.dev0'
 name='repoze.who.plugins.metadata_cache'
 
 here = os.path.abspath(os.path.dirname(__file__))

@@ -1,12 +1,10 @@
-
 import os
-import sys
 
 from setuptools import setup, find_packages
 
 
 version = '0.2.dev0'
-name='repoze.who.plugins.metadata_cache'
+name = 'repoze.who.plugins.metadata_cache'
 
 here = os.path.abspath(os.path.dirname(__file__))
 
@@ -39,7 +37,7 @@ setup(name=name,
       include_package_data=True,
       zip_safe=False,
       packages=find_packages('src'),
-      package_dir = {'': 'src'},
+      package_dir={'': 'src'},
       setup_requires=[
           'setuptools',
           'setuptools-git',
@@ -47,9 +45,10 @@ setup(name=name,
       install_requires=[
           'repoze.who>=1.0',
       ],
-      extras_require={'test': ['ipython',
-                               'ipdb',
-                               'nose',
-                               ],
-                     },
+      extras_require={
+          'test': ['ipython',
+                   'ipdb',
+                   'nose',
+                   ],
+      },
       )
